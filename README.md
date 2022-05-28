@@ -15,5 +15,4 @@
 
 
 ## Screenshot
-
 <img src="https://i.imgur.com/AjzIxrC.png" />
