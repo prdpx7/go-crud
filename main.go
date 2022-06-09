@@ -11,6 +11,8 @@ func setupRouter(r *gin.Engine) {
 	r.GET("/ping", controllers.Ping)
 	r.GET("/authors", controllers.ListAuthors)
 	r.POST("/authors", controllers.CreateAuthor)
+	r.POST("/books", controllers.CreateBook)
+	r.GET("/books", controllers.ListBooks)
 }
 
 func main() {

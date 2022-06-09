@@ -16,6 +16,6 @@ func SetupConnection() {
 	}
 
 	database.AutoMigrate(&Author{})
-	// database.AutoMigrate(&Blog{})
+	database.AutoMigrate(&Book{})
 	DB = database
 }

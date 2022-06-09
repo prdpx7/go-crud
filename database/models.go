@@ -12,11 +12,11 @@ type Author struct {
 	UpdatedAt time.Time `json:"updated_at"`
 }
 
-// type Blog struct {
-// 	ID        int
-// 	Author    Author
-// 	Title     string
-// 	Post      string
-// 	CreatedAt time.Time
-// 	UpdatedAt time.Time
-// }
+type Book struct {
+	ID        int       `json:"id" gorm:"primary_key"`
+	AuthorID  uint      `json:"author_id"`
+	Author    Author    `json:"author" gorm:"foreignKey:id"`
+	Title     string    `json:"title"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
+}
