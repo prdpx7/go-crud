@@ -15,7 +15,7 @@ type Author struct {
 type Book struct {
 	ID        int       `json:"id" gorm:"primary_key"`
 	AuthorID  uint      `json:"author_id"`
-	Author    Author    `json:"author" gorm:"foreignKey:id"`
+	Author    Author    `json:"author" gorm:"foreignKey:author_id"`
 	Title     string    `json:"title"`
 	CreatedAt time.Time `json:"created_at"`
 	UpdatedAt time.Time `json:"updated_at"`

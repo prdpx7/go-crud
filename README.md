@@ -10,9 +10,9 @@
 * `git clone git@github.com/prdpx7/go-crud`
 * `cd go-crud`
 * `go get -u`
-* `go build && go run .`
+* `make run`
 
 
 
 ## Screenshot
-<img src="https://i.imgur.com/AjzIxrC.png" />
+<img src="https://i.imgur.com/I0k1cCN.png" />
